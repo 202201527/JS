@@ -1,5 +1,5 @@
 // ✨ 6.2.1 Object Literal을 이용하여 객체를 만드는 방법
-"use strict"; // 문법 오류 체크(엄격한 모드)
+"use strict";
 
 const obj = {}; // const keyword로 만든 변수는 값을 재할당 받을 수 없음
 obj.x = 10; // 하지만, 객체를 업데이트 하는 것은 가능
