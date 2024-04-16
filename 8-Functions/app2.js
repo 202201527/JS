@@ -1,6 +1,9 @@
 // 🌟 8.1.2. Function Expressions
 // This function expression defines a function that squares its argument.
 // Note that we assign it to a variable
+
+//전통적인 함수 정의를 하지 않는 이상 hoisting이 발생하지 않음
+
 const square = function (x) {
   return x * x;
 };

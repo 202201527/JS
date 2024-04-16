@@ -13,3 +13,11 @@ let o = {
   },
 };
 o.m();
+
+
+//bind()메서드 예제: bind 메서드의 argument 에 객체을 넣을 수 있음
+let k = function (a){
+  return this.x + a;
+};
+let k_bind = k.bind({x:10, y:20});
+console.log(k_bind(5));

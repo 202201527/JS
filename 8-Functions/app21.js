@@ -12,4 +12,9 @@ function checkscope() {
   }
   return f;
 }
-let s = checkscope()(); // 🙋 What does this return?
+scope = "INU";
+
+let v =checkscope();
+let s = v();
+
+//let s = checkscope()(); // 🙋 What does this return?

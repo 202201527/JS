@@ -19,13 +19,13 @@ console.log("😀", o);
 function lib(obj) {
   console.log(`👏🌟 ${obj.x}`);
   obj.x = "-------";
-  console.log("실수를 발생시킴", obj);
+  console.log("실수를 발생시킴", obj); //이때 x 값이 바뀜(실수)
   for (let a in obj) {
     console.log(`🌟 ${obj[a]}`);
   }
 }
 lib(Object.create(o));
-console.log("영향을 받았는지 확인", o);
+console.log("영향을 받았는지 확인", o); //영향을 안받음
 
 // 이런식으로 객체를 생성할 수도 있음
 let ox1 = { age: 25, i: o };
