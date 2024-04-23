@@ -8,7 +8,7 @@ Array.of(1, 2, 3); // => [1, 2, 3]
 
 // ✨ Array.from()
 // Argument로 iterable or array-like object를 입력 받음
-// Iterable Object? for..of 반복문을 적용할 수 있음 (뒤에서 학습할 예정)
+// Iterable Object? for..of 반복문을 적용할 수 있음 (뒤에서 학습할 예정)  
 let original = [1, 2, 3];
 let copy = Array.from(original);
 

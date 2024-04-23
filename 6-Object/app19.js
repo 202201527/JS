@@ -12,4 +12,4 @@ let p = {
   [PROPERTY_NAME]: 1,
   [computePropertyName()]: 2,
 };
-p.p1 + p.p2; // => 3
+p.p + p.p2; // => 3

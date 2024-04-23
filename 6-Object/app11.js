@@ -9,9 +9,10 @@ target; //=>{x:1,y:2,z:3}
 // 🌟 두번째 방법
 let o = { x: 1, z: 3 };
 let defaults = { x: 2, y: 2 };
-Object.assign(o, defaults); // overwrites everything in o with defaults
+Object.assign(o, defaults); // overwrites everything in o with defaults => {x:2, z:3, y:2}
 o = Object.assign({}, defaults, o); // 같은 결과
-o = { ...defaults, ...o }; // "...spread operator" 활용, 같은 결과
+o = { ...defaults, ...o }; // "...spread operator" 활용 => {x:1,y:2,z:3}
+//... syntax로 복사할 때, Property 이름이 중복되면??? 😃 마지막에 오는 값을 선택
 
 // 🌟 세번째 방법. 아래와 같이 함수를 만들어서 복사
 // Like Object.assign() but doesn't override existing properties (and also doesn't handle Symbol properties)

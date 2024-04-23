@@ -20,7 +20,7 @@ uniqueInteger1(); // => 1
 // uniqueInteger() function that used a property of the function itself 
 // to keep track of the next value to be returned.
 
-let uniqueInteger2 = (function () {
+let uniqueInteger2 = (()=> {
   // Define and invoke
   let counter = 0; // Private state of function below
   return function () {

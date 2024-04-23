@@ -70,5 +70,5 @@ const serialnum = {
   },
 };
 serialnum.next = 10; // Set the starting serial number
-serialnum.next; // => 10
-serialnum.next; // => 11: different value each time we get next
+serialnum.next; // => 10: 이때 n은 11로 증가
+serialnum.next; // => 11: different value each time we get next 

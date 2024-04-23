@@ -4,7 +4,7 @@
 
 
 //전통적인 함수 정의를 하지 않는 이상 hoisting이 발생하지 않음
-
+//square(15); //hoisting 발생 안함
 const square = function (x) {
   return x * x;
 };
