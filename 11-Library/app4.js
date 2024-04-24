@@ -9,7 +9,7 @@ s.add(1); // Add the same number again
 s.size; // => 1; the size does not change
 s.add(true); // Add another value; note that it is fine to mix types
 s.size; // => 2
-s.add([1, 2, 3]); // Add an array value
+s.add([1, 2, 3]); // Add an array value =>실제로 s는 {1,true, array(3)} 임
 s.size; // => 3; the array was added, not its elements
 s.delete(1); // => true: successfully deleted element 1
 s.size; // => 2: the size is back down to 2

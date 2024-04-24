@@ -8,8 +8,11 @@ try {
   getRectArea(3, "A");
 } catch (e) {
   console.error(e);
-  // console.error(e.name);
-  // console.error(e.message);
-  // console.error(e.toString());
+  console.error(e.name);
+  console.error(e.message);
+  console.error(e.toString());
   // Expected output: Error: Parameter is not a number!
 }
+
+let s = getRectArea(5,10);
+console.log(`${s}`);
