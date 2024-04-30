@@ -6,12 +6,12 @@
       "name": "Kim"
     },
     {
-      "studentID": "12344332",
-      "name": "james",
-      "id": 2
+      "id": 2,
+      "studentID": "20181234",
+      "name": "Choi"
     }
   ],
-  "server": [
+  "linux": [
     {
       "id": 1,
       "studentID": "20212323",
@@ -23,10 +23,6 @@
       "studentID": "202503021",
       "name": "Lee",
       "id": 1
-    },
-    {
-      "gender": "female",
-      "id": 2
     }
   ]
 }
