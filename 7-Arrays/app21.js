@@ -17,9 +17,9 @@ a.push(...values); // a = [10, 1, 2, 3]
 
 // ✨ unshift(), shift() 메서드는 각각 push(), pop() 메서드와 유사함. 다만, 반대쪽 (beginning)에서 push, pop이 일어남
 let q = [];
-q.push(1, 2);
-q.shift();
-q.push(3);
-q.unshift(100, 101);
-q.shift();
-q.shift();
+q.push(1, 2); // q == [1,2]
+q.shift(); // q == [2]
+q.push(3); // q == [2,3]
+q.unshift(100, 101); //q ==[100,101,2,3]
+q.shift();//q ==[101,2,3]
+q.shift(); //q==[2,3]

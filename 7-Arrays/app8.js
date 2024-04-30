@@ -7,6 +7,6 @@ b.push("zero"); // Add a value at the end. a = ["zero"]
 b.push("one", "two"); // Add two more values. a = ["zero", "one", "two"]
 
 let c = [1, 2, 3];
-delete c[2]; // a now has no element at index 2
+delete c[2]; // true => a now has no element at index 2
 2 in c; // => false: no array index 2 is defined
-c.length; // => 3: delete does not affect array length
+c.length; // => 3: delete does not affect array length  c= [1,2, empty]

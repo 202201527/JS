@@ -17,7 +17,7 @@ funcs1[2](); // => 2 // 함수가 선언 될때 정해짐
 // Return an array of functions that return the values 0-9
 function constfuncs() {
   let funcs2 = [];
-  for (var i = 0; i < 10; i++) {  //var 보다는 let 선호
+  for (var i = 0; i < 10; i++) {  //var 말고 let 쓰면 각각의 독립적인 scope 만들어짐
     funcs2[i] = () => i;
   }
   return funcs2;

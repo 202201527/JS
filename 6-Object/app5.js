@@ -14,9 +14,9 @@ function computeValue(portfolio) {
 let arr = ["book", "pen", "note"]; // Array Object
 let obj = { book: {}, pen: {}, note: {} };
 
-for (let i of arr) {
-  console.log(i);
+for (let i of arr) { // in으로 바꾸면 index 출력 0 1 2
+  console.log(i); //in 인데 element 출력하려면 arr[i]
 }
 for (let i in obj) {
-  console.log("✨", i);
+  console.log("✨", i); //obj[i] 하면 값 출력 {} {} {}
 }

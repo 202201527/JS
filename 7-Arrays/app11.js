@@ -5,8 +5,9 @@
 // the forEach() is aware of sparse arrays and does not invoke your function for elements that are not there.
 let letters = [..."Hello world"]; // An array of letters
 let uppercase = "";
-letters.forEach(/*function*/ (letter) => {
+letters.forEach(/*function*/ (letter, index) => {
   // Note arrow function syntax here
   uppercase += letter.toUpperCase();
+  //uppercase += letters[index].toUpperCase()
 });
 uppercase; // => "HELLO WORLD"

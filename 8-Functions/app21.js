@@ -17,5 +17,6 @@ function checkscope() {
 scope = "Incheon National University";
 
 let v = checkscope();
-let s = v(); // 🙋 What does this return? => local scope
+let s = v(); // 🙋 What does this return? => local scope : 함수가 실행되는 위치에 관계없이 함수의 범위가 실행결과에 영향을 미침
 // checkscope()()
+

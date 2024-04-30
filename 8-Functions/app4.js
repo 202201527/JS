@@ -1,6 +1,6 @@
 // 🌟 8.1.4. Nested Functions
 
-// console.log(hypotenuse(3, 4)); // Hoisting
+//console.log(hypotenuse(3, 4)); // Hoisting 적용됨
 
 let s1 = hypotenuse(10, 20);
 
@@ -9,7 +9,7 @@ function hypotenuse(a, b) {
     return x * x + a * b;
   }
   return square;
-  // return Math.sqrt(square(a) + square(b));
+  //return Math.sqrt(square(a) + square(b));
 }
 
 let s2 = hypotenuse(5, 5);

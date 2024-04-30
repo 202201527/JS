@@ -1,4 +1,5 @@
 let o = { x: 1 };
+let o2= Object.create(o);
 
 // in operator → It returns true if the object has an own property or an inherited property by that name.
 if ("x" in o) console.log("😀"); // => true: o has an own property "x"
@@ -10,7 +11,7 @@ o.hasOwnProperty("y"); // => false: o doesn't have a property y
 o.hasOwnProperty("toString"); // => false: toString is an inherited property
 
 o.propertyIsEnumerable("x"); // => true: o has an own enumerable property x
-o.propertyIsEnumerable("toString"); // => false: not an own property
+o2.propertyIsEnumerable("toString"); // => false: not an own property
 Object.prototype.propertyIsEnumerable("toString"); // => false: not enumerable
 
 o.x !== undefined; // => true: o has a property x

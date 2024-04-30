@@ -6,7 +6,7 @@ o1.x + o1.y; //=>3
 
 //o1.dweb = "inu lab";
 
-let o2 = Object.create(null); // o2 inherits no props or methods.
+let o2 = Object.create(null); // o2 inherits no props or methods. 프로토타입도 없음
 
 let o3 = Object.create(Object.prototype); // o3 is like {} or new Object().
 
@@ -18,23 +18,11 @@ console.log("😀", o);
 // 🌟 Guard against accidental modifications
 function lib(obj) {
   console.log(`👏🌟 ${obj.x}`);
-  obj.x = "-------";
-  console.log("실수를 발생시킴", obj); //이때 x 값이 바뀜(실수)
+  obj.x = "-------";  //prototype o의 x값이 수정 되는게 아니라 obj에 x 프로퍼티가 생김
+  console.log("실수를 발생시킴", obj);
   for (let a in obj) {
     console.log(`🌟 ${obj[a]}`);
   }
 }
 lib(Object.create(o));
-console.log("영향을 받았는지 확인", o); //영향을 안받음
-
-// 이런식으로 객체를 생성할 수도 있음
-let ox1 = { age: 25, i: o };
-ox1.i.x = "ok if you try to modify x";
-console.log("👍", ox1);
-console.log("🏅", o);
-
-// 이런식으로 객체를 생성할 수도 있음
-let ox2 = { age: 25, i: Object.create(o) };
-ox2.i.x = "ok if you try to modify x";
-console.log("👍", ox2);
-console.log("🏅", o);
+console.log("영향을 받았는지 확인", o); //영향을 안받음 (프로토타입 o의 x값을 수정한 게 아니기 때문)

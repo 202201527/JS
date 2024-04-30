@@ -2,15 +2,15 @@
 let target = { x: 1 },
   source = { y: 2, z: 3 };
 for (let key of Object.keys(source)) {
-  target[key] = source[key];
+  target[key] = source[key]; 
 }
-target; //=>{x:1,y:2,z:3}
+console.log(target); //=>{x:1,y:2,z:3}
 
 // 🌟 두번째 방법
 let o = { x: 1, z: 3 };
 let defaults = { x: 2, y: 2 };
 Object.assign(o, defaults); // overwrites everything in o with defaults => {x:2, z:3, y:2}
-o = Object.assign({}, defaults, o); // 같은 결과
+o = Object.assign({}, defaults, o); // 1 2 3
 o = { ...defaults, ...o }; // "...spread operator" 활용 => {x:1,y:2,z:3}
 //... syntax로 복사할 때, Property 이름이 중복되면??? 😃 마지막에 오는 값을 선택
 

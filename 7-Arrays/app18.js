@@ -5,7 +5,7 @@
 // 😀 reduce() 메서드는 두 개의 인자를 취할 수 있고 reduced value를 리턴함
 // → 첫번째 인자는 reduction operation을 수행하는 함수. 두번째 인자는 첫번째 인자의 initial value
 let a = [1, 2, 3, 4, 5];
-a.reduce((x, y) => x + y, 0); // => 15; the sum of the values
+a.reduce((x, y) => {x + y, 0}); // => 15; the sum of the values
 a.reduce((x, y) => x * y, 1); // => 120; the product of the values
 a.reduce((x, y) => (x > y ? x : y)); // => 5; the largest of the values
 

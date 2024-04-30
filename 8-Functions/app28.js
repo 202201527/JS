@@ -15,7 +15,7 @@ p.g(2); // => 3: g is still bound to o, not p.
 
 // ✨ 예제 ②
 let sum = (x, y) => x + y; // Return the sum of 2 args
-let succ = sum.bind(null, 1); // Bind the first argument to 1
+let succ = sum.bind(null, 1); // Bind the first argument to 1 인자 하나만 받겠다는 의미 x = 1
 succ(2); //=>3:x is bound to 1,and we pass 2 for they argument
 function f(y, z) {
   return this.x + y + z;

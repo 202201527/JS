@@ -9,7 +9,7 @@ let b = [0, ...a, 4]; //b==[0,1,2,3,4] // ... is spread operator
 let original = [1, 2, 3];
 let copy = [...original];
 copy[0] = 0; // Modifying the copy does 'not' change the original
-original[0]; // => 1
+original[0]; // => 1    
 
 // 예제 3. You can turn any 'string' into an array of 'single-character strings':
 let digits = [..."0123456789ABCDEF"];

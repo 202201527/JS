@@ -22,7 +22,7 @@ function timed(f) {
     let startTime = Date.now();
     try {
       // Pass all of our arguments to the wrapped function
-      return f(...args); // 🌟 Spread the args back out again
+      return f(...args); // 🌟 Spread the args back out again 여기서 dweb 함수실행
     } finally {
       // Before we return the wrapped return value, print elapsed time.
       console.log(`Exiting ${f.name} after ${Date.now() - startTime}ms`);

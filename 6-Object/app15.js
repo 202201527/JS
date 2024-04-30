@@ -21,8 +21,7 @@ let point = {
     return `(${this.x}, ${this.y})`;
   },
   toLocaleString: function () {
-    return `(${this.x.toLocaleString()},
-    ${this.y.toLocaleString()})`;
+    return `(${this.x.toLocaleString()}, ${this.y.toLocaleString()})`;
   },
 };
 point.toString(); // => "(1000, 2000)"

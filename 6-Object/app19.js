@@ -4,8 +4,8 @@ function computePropertyName() {
   return "p" + 2;
 }
 let o = {};
-o[PROPERTY_NAME] = 1;
-o[computePropertyName()] = 2;
+o[PROPERTY_NAME] = 1; //p
+o[computePropertyName()] = 2; //p2
 
 // → 이런식으로 객체 리터럴에 속성을 추가할 수 있음
 let p = {

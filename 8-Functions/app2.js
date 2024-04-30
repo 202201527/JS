@@ -16,11 +16,10 @@ const f = function fact(x) {
 };
 
 // Function expressions can also be used as arguments to other functions:
-[3, 2, 1].sort(function (a, b) {
-  return a - b;
-});
+[3, 2, 1].sort( (a, b) => a - b); // 1, 2, 3
 
 // Function expressions are sometimes defined and immediately invoked:
+// tensquared에는 실행결과가 전달됨 100
 let tensquared = (function (x) {
   return x * x;
 })(10);

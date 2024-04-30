@@ -26,7 +26,7 @@ delete 1; // => true: nonsense, but true anyway
 // Prototype으로부터 상속받은 property가 삭제되진 않음 (Query와는 다름)
 let obj = Object.create({ x: 1 });
 
-let succeed = delete obj.x;
+let succeed = delete obj.x; // true
 console.log(obj.__proto__);
 
 // In strict mode, all these deletions throw TypeError instead of returning false
