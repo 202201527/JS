@@ -3,9 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>✨✨ Chapter 15. JS in Web Browsers</title>
+    <title>🌟 15.11.3 WebSockets</title>
   </head>
   <body>
-    <script src="./app.js"></script>
+    <script>
+      const ws = new WebSocket("ws://localhost:3003");
+      ws.addEventListener("open", () => {
+        console.log(`We are connected 💕`);
+
+        ws.send(`I can't wait for UNI LAND`);
+      });
+
+      ws.addEventListener("message", (msg) => {
+        console.log(msg);
+      });
+
+      ws.addEventListener("message", ({ data }) => {
+        console.log(data);
+      });
+    </script>
   </body>
 </html>
